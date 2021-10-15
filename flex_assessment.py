@@ -33,6 +33,7 @@ def add_people():
     receivedData = request.data
 
     try:
+        # load function validates JSON message
         json_object = json.loads(receivedData)
         print("About to insert into Mongo")
         collection=db.FlexTest
